@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #0d1b2a, #000814);
+    font-family: 'Poppins', sans-serif;
+    color: #e0f7fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container utama */
+.container {
+    width: 90%;
+    margin: 40px auto;
+    background: rgba(10, 20, 40, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Efek neon halus untuk judul dan quote */
+.judul {
+    font-size: 2.4rem;
+    color: #00b4ff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #00b4ff, 0 0 20px #00b4ff, 0 0 40px #00e5ff;
+    animation: neonPulse 2.5s ease-in-out infinite alternate;
+}
+
+.quote {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #00e5ff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 12px #00e5ff, 0 0 25px #00b4ff;
+    animation: neonPulse 3s ease-in-out infinite alternate;
+}
+
+/* Animasi neon */
+@keyframes neonPulse {
+    from {
+        text-shadow: 0 0 10px #00b4ff, 0 0 20px #00b4ff, 0 0 40px #00e5ff;
+    }
+    to {
+        text-shadow: 0 0 15px #00e5ff, 0 0 30px #00b4ff, 0 0 50px #00ffff;
+    }
+}
+
+/* Form input */
+.input-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.input-form input,
+.input-form select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #1c2b3a;
+    background: rgba(15, 25, 45, 0.9);
+    color: #f0f0f0;
+    width: 160px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-form input:focus,
+.input-form select:focus {
+    border-color: #00b4ff;
+    box-shadow: 0 0 8px #00b4ff;
+}
+
+/* Tombol umum */
+button, .btn-tambah, .btn-clear, .btn-logout, .btn-edit, .btn-hapus {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Tombol tambah */
+.btn-tambah {
+    background-color: #2196f3;
+    color: white;
+}
+.btn-tambah:hover {
+    background-color: #42a5f5;
+}
+
+/* Tombol edit dan hapus */
+.btn-edit {
+    background-color: #43a047;
+    color: white;
+}
+.btn-edit:hover {
+    background-color: #66bb6a;
+}
+
+.btn-hapus {
+    background-color: #e53935;
+    color: white;
+}
+.btn-hapus:hover {
+    background-color: #ef5350;
+}
+
+/* Tombol clear */
+.btn-clear {
+    background-color: #ff9800;
+    color: white;
+    margin-top: 20px;
+}
+.btn-clear:hover {
+    background-color: #ffb74d;
+}
+
+/* Tombol logout */
+.btn-logout {
+    display: inline-block;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+.btn-logout:hover {
+    background-color: #64b5f6;
+}
+
+/* Tabel */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #0d47a1;
+    color: #fff;
+}
+
+tr:hover {
+    background: rgba(0, 150, 255, 0.1);
+}
+
+/* Total harian */
+.total-harian {
+    margin: 15px 0;
+    font-size: 1.3rem;
+    color: #00ff99;
+    font-weight: bold;
+}
